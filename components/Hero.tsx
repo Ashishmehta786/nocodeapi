@@ -1,5 +1,4 @@
 import nodelogo from "./images/nodejs.svg";
-import { Button } from "./ui/Button";
 import Image from "next/image";
 import thunder from "./images/thunder.gif";
 export default function Hero() {
@@ -24,8 +23,11 @@ export default function Hero() {
           <span className="flex ">
             <span></span>
             <span className="justify-start my-4 flex gap-2">
-              <Button className="bg-indigo-600 hover:bg-indigo-500 group">
-                Get Started
+            <a
+                href="#"
+                className={`mt-8 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2  bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-500 group hover:shadow-lg flex items-center gap-2`} 
+              >
+              Get started
                 <span className="group-hover:translate-x-[5px] transition-transform duration-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -42,13 +44,12 @@ export default function Hero() {
                     />
                   </svg>
                 </span>
-              </Button>
-              <Button
-                variant="outline"
-                className="border border-indigo-600 bg-background shadow-sm hover:bg-indigo-600 hover:text-white group"
+              </a>
+              <a
+                className="block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2  bg-white text-black hover:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-500 group hover:shadow-lg flex items-center gap-2 border border-indigo-600 bg-background shadow-sm hover:bg-indigo-600 hover:text-white group mt-8 "
               >
                 Learn more
-              </Button>
+              </a>
             </span>
           </span>
         </span>
