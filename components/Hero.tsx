@@ -3,7 +3,7 @@ import Image from "next/image";
 import thunder from "./images/thunder.gif";
 export default function Hero() {
   return (
-    <div>
+    <>
       <div className="flex justify-between lg:justify-between container max-w-7xl  h-[500px] mx-auto ">
         <span className="flex flex-col ">
           <h1 className="md:text-5xl lg:text-6xl leading-10 text-4xl font-bold lg:max-w-3xl sm:max-w-sm  items-center space-x-3">
@@ -57,6 +57,6 @@ export default function Hero() {
           <Image src={nodelogo} alt="nodelogo" width={100} height={100} />
         </span>
       </div>
-    </div>
+    </>
   );
 }
