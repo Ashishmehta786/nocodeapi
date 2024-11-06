@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Check } from "lucide-react";
+import check from "../../components/images/check.svg";
+import Image from "next/image";
 
 export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
-
+  console.log(check);
   const tiers = [
     {
       name: "Starter",
@@ -130,9 +131,10 @@ export default function Pricing() {
                 >
                   {tier.features.map((feature) => (
                     <li key={feature.name} className="flex gap-x-3">
-                      <Check
+                      <Image
+                        src={check}
                         className="h-6 w-5 flex-none text-indigo-400"
-                        aria-hidden="true"
+                        alt="check"
                       />
                       <span>
                         <span className="font-semibold text-white">
